@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 p {
     margin: 0;
@@ -10,11 +13,10 @@ div {
     box-sizing: border-box;
 }
 .horisontal {
-    height: 25%;
+    flex-grow: 1;
     padding: 0 20px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 20px;
 }
 
@@ -24,13 +26,14 @@ div {
 
 .inner {
     height: 40px;
-    width: 200px;
+    width: 10%;
+    min-width: 100px;
     background-color: white;
     line-height: 40px;
 }
 
 .middle {
-    height: 50%;
+    flex-grow: 3;
     display: flex;
 }
 
