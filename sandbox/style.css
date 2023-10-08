@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    height: 100vh;
+
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.one {
+    background: rgb(36, 207, 207);
+    width: 100%;
+}
+
+.two {
+    background: rgb(203, 19, 157);
+}
+
+.three {
+    background: rgb(240, 149, 113);
+}
