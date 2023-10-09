@@ -12,15 +12,23 @@ div {
 }
 .horisontal {
     height: 20%;
-    display: block;
-    padding: 0 20px;
     position: relative;
+    overflow: hidden;
 }
 
-.horisontal > * {
+.horisontal__container {
+    width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    display: table;
+    height: 20px;
+}
+
+.horisontal__container > * {
+    display: table-cell;
     vertical-align: middle;
 }
 
@@ -34,16 +42,10 @@ div {
     min-width: 100px;
     background-color: white;
     line-height: 40px;
-    z-index: 1;
-}
-
-.inner.right {
-    right: 20px;
 }
 
 .p-right {
     text-align: right;
-    right: 20px;
 }
 
 .middle {
@@ -53,7 +55,6 @@ div {
 
 .middle > * {
     display: table-cell;
-    /* vertical-align: middle; */
 }
 
 .vertical-orange {
