@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab3-email</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                font-size: clamp(0.8rem, 1vw, 1rem);
+            }
+            .wrapper {
+                height: 100vh;
+            }
+            p {
+                margin: 0;
+            }
+            div {
+                box-sizing: border-box;
+            }
+            .horisontal {
+                height: 20%;
+                overflow: hidden;
+            }
+
+            .horisontal__container {
+                width: 100%;
+                padding: 0 20px;
+                height: 100%;
+                display: table;
+            }
+
+            .horisontal__container > * {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .blue {
+                background-color: rgb(99, 99, 225);
+            }
+
+            .inner {
+                height: 40px;
+                width: 10%;
+                min-width: 100px;
+                background-color: rgb(235, 235, 217);
+                line-height: 40px;
+            }
+
+            .p-right {
+                text-align: right;
+            }
+
+            .middle {
+                height: 60%;
+                display: table;
+            }
+
+            .middle > * {
+                display: table-cell;
+            }
+
+            .vertical-orange {
+                background-color: rgb(218, 167, 72);
+                width: 25%;
+                padding: 0 20px;
+                vertical-align: middle;
+            }
+
+            .middle__right {
+                height: 100%;
+                width: 74%;
+            }
+            .horisontal-green {
+                background-color: rgb(79, 181, 79);
+                height: 15%;
+                width: 100%;
+                padding-right: 20px;
+            }
+
+            .middle__right__center {
+                height: 85%;
+                display: table;
+                width: 100%;
+            }
+
+            .middle__right__center > * {
+                display: table-cell;
+                height: 100%;
+            }
+
+            .center-white {
+                padding: 0 20px;
+                width: 74%;
+                vertical-align: middle;
+            }
+
+            h1,
+            h2 {
+                margin: 0;
+                padding: 0 0 0 20px;
+                font-weight: 400;
+                font-size: larger;
+            }
+
+            p {
+                overflow: hidden;
+            }
+
+            .menu {
+                display: table;
+                float: right;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                height: 100%;
+            }
+
+            .menu > li {
+                display: table-cell;
+                vertical-align: middle;
+                list-style: none;
+                margin-left: 20px;
+            }
+
+            a {
+                line-height: 100%;
+            }
+
+            .menu > li::after {
+                content: '';
+                display: inline-block;
+                width: 20px;
+            }
+
+            a {
+                color: black;
+            }
+
+            @media (max-width: 500px) {
+                .menu li:nth-child(n + 4) {
+                    display: none;
+                }
+            }
+
+            .current-page-link {
+                font-weight: 700;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                min-width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="horisontal blue">
+                <div class="horisontal__container">
+                    <div class="inner right">
+                        <h1>Adiós</h1>
+                    </div>
+                    <p class="p-right">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque totam non
+                        iure magni facere voluptatibus ut molestiae quisquam sed tenetur ipsa
+                        cupiditate, rerum quaerat aperiam sapiente illo est blanditiis dolore!
+                    </p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="vertical-orange">
+                    <p>
+                        Mexico covers 1,972,550 km2 (761,610 sq mi), making it the world's
+                        13th-largest country by area; with a population of almost 130 million, it is
+                        the 10th-most-populous country and has the most Spanish speakers. Mexico is
+                        organized as a federal republic comprising 31 states and Mexico City, its
+                        capital.
+                    </p>
+                </div>
+                <div class="middle__right">
+                    <div class="horisontal-green">
+                        <ul class="menu">
+                            <li>
+                                <a href="page2.html" class="current-page-link">Email-version</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle__right__center">
+                        <div class="center-white">
+                            <p>
+                                Eagles are found nearly all over the world in many different
+                                habitats. There are more than 50 species, or types, of eagle. All
+                                are excellent hunters because of their keen eyesight, strong claws,
+                                and hooked beak. Different types of eagle eat a great variety of
+                                animals. Their prey ranges from fish, birds, or snakes to rabbits,
+                                foxes, monkeys, and even deer.
+                            </p>
+                        </div>
+                        <div class="vertical-orange">
+                            <img
+                                src="https://em-content.zobj.net/source/apple/155/eagle_1f985.png"
+                                alt="eagle"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horisontal blue">
+                <div class="horisontal__container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed dolore
+                        reiciendis voluptate consequatur at optio fugiat quia provident corrupti,
+                        vitae inventore, quasi esse nobis reprehenderit quaerat veritatis nihil
+                        deserunt?
+                    </p>
+                    <div class="inner right">
+                        <h2>Amigos</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
