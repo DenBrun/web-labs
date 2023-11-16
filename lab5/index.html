@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab5</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="horisontal-blue first" id="block-1">
+                <div class="inner">
+                    <h1 class="header" id="block-x">Adiós</h1>
+                </div>
+                <p class="p-right">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque totam non iure
+                    magni facere voluptatibus ut molestiae quisquam sed tenetur ipsa cupiditate,
+                    rerum quaerat aperiam sapiente illo est blanditiis dolore!
+                </p>
+                <img
+                    src="table_icon.png"
+                    id="tableImage"
+                    alt="Table Image"
+                    onmouseover="showForm('block-1')"
+                />
+            </div>
+
+            <div class="vertical-orange left" id="block-2">
+                <img src="eagle.png" alt="eagle" />
+                <img
+                    src="table_icon.png"
+                    id="tableImage"
+                    alt="Table Image"
+                    onmouseover="showForm('block-2')"
+                />
+            </div>
+
+            <div class="horisontal-green" id="block-3">
+                <ul class="menu">
+                    <li><a href="index.html" class="current-page-link">This page</a></li>
+                </ul>
+                <img
+                    src="table_icon.png"
+                    id="tableImage"
+                    alt="Table Image"
+                    onmouseover="showForm('block-3')"
+                />
+            </div>
+
+            <div class="center-white" id="block-4">
+                <form id="numbersForm">
+                    <label for="numbersInput">Enter 10 numbers (comma-separated): </label>
+                    <input type="text" id="numbersInput" />
+                    <button type="button" onclick="calculateMinMax()">Calculate Min-Max</button>
+                </form>
+                <img
+                    src="table_icon.png"
+                    id="tableImage"
+                    alt="Table Image"
+                    onmouseover="showForm('block-4')"
+                />
+                <!-- <button type="button" onclick="saveTableData()">Save Table Data</button> -->
+            </div>
+            <div class="vertical-orange right" id="block-5">
+                <div>
+                    <label for="boldCheckbox">Set text bold:</label>
+                    <input type="checkbox" id="boldCheckbox" />
+                </div>
+                <br />
+                <p id="boldText">
+                    Mexico covers 1,972,550 km2 (761,610 sq mi), making it the world's 13th-largest
+                    country by area; with a population of almost 130 million, it is the
+                    10th-most-populous country and has the most Spanish speakers. Mexico is
+                    organized as a federal republic comprising 31 states and Mexico City, its
+                    capital.
+                </p>
+                <img
+                    src="table_icon.png"
+                    id="tableImage"
+                    alt="Table Image"
+                    onmouseover="showForm('block-5')"
+                />
+            </div>
+
+            <div class="horisontal-blue footer" id="block-6">
+                <img
+                    src="table_icon.png"
+                    id="tableImage"
+                    alt="Table Image"
+                    onmouseover="showForm('block-6')"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed dolore
+                    reiciendis voluptate consequatur at optio fugiat quia provident corrupti, vitae
+                    inventore, quasi esse nobis reprehenderit quaerat veritatis nihil deserunt?
+                </p>
+                <div class="inner">
+                    <h2 class="header" id="block-y">Amigos</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
